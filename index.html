@@ -1,13 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jarvis</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS AI Assistant</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="jarvis-container">
+        <div class="arc-reactor">
+            <div class="core"></div>
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            <div class="ring ring-4"></div>
+            <div class="ring ring-5"></div>
+        </div>
+        
+        <div class="face-plate">
+            <div class="eye left-eye">
+                <div class="glow"></div>
+            </div>
+            <div class="eye right-eye">
+                <div class="glow"></div>
+            </div>
+            <div class="mouth">
+                <div class="mouth-line"></div>
+            </div>
+        </div>
+
+        <div class="status-text" id="status">Initializing JARVIS...</div>
+        
+        <div class="response-container" id="responseContainer">
+            <div class="response" id="response"></div>
+        </div>
+
+        <div class="controls">
+            <button id="listenBtn" class="jarvis-btn">
+                <span class="btn-icon">🎤</span>
+                <span class="btn-text">Activate</span>
+            </button>
+            <button id="speakBtn" class="jarvis-btn">
+                <span class="btn-icon">🔊</span>
+                <span class="btn-text">Test Voice</span>
+            </button>
+        </div>
+
+        <div class="command-hints">
+            <p>Commands: "What's the weather", "Tell me the time", "Open browser", "Search for [topic]"</p>
+        </div>
+    </div>
+
+    <script src="src/main.js"></script>
+</body>
 </html>

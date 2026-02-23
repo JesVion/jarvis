@@ -1,24 +1,17 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Dependencies
+node_modules/
+package-lock.json
 
-node_modules
-dist
-dist-ssr
-*.local
+# Virtual environment
+.venv/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# IDE
+.vscode/
+
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# API Keys - keep your secrets safe
+# Add your Groq API key in src/main.js
+# NEVER commit actual API keys to public repositories
