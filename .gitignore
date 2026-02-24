@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Virtual environment
+.venv/
+
+# IDE
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# API Keys - keep your secrets safe
+# Add your Groq API key in src/main.js
+# NEVER commit actual API keys to public repositories
